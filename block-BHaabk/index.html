@@ -1,0 +1,81 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Blog And Gallery</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+ </head>
+ <body>
+    <header class="header">
+    <div class="flex clearfix">
+        <a class="brand" href="#"><img src="ray-1.svg" alt="Brand Log"></a>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Gallery</a>
+        </nav>
+</div>
+</header>
+<main>
+    <article class="article">
+        <div class="container flex clearfix">
+            <div class="col col-article-left">
+                <h1 class="article-heading">This is heading of article</h1>
+                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque non quos tenetur corrupti ad laboriosam nisi quasi culpa omnis fuga, quidem rem deserunt fugiat nihil ab iusto vero autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores a nostrum pariatur tempora ducimus nihil? Obcaecati rerum illo dolor voluptas labore. Praesentium voluptate dolorem dolorum, nisi libero ex quas.</p>
+            </div>
+            <div class="col">
+                <img src="https://wallpapercave.com/wp/wp1977778.jpg" alt="Blog">
+            </div>
+        </div>
+    </article>
+    <section class="gallery">
+        <h2 class="article-heading">Gallery</h2>
+        <div class="container flex clearfix">
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977763.jpg" alt="Pic01">
+            </div>
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977739.jpg" alt="Pic02">
+            </div>
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977775.jpg" alt="Pic03">
+            </div>
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977746.jpg" alt="Pic04">
+            </div>
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977752.jpg" alt="Pic05">
+            </div>
+            <div class="col-1-3">
+                <img src="https://wallpapercave.com/wp/wp1977758.jpg" alt="Pic06">
+            </div>            
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <nav>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
