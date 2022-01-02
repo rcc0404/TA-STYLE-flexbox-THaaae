@@ -74,17 +74,15 @@ header {
     background-color: #22396a;
     height: 72px;
     line-height: 72px;
+    padding: 0 -128px;
 }
-.brand {
-    float: left;
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 .brand img {
-    vertical-align: middle;
     width: 200px;
     height: 67px;
-}
-.nav {
-    float: right;
 }
 .nav a {
     font-size: 20px;
@@ -101,16 +99,16 @@ header {
     padding: 80px 0;
 }
 .article-heading {
-    font-size: 36px;
+    font-size: 44px;
+    font-weight: 600;
     margin-bottom: 16px;
-    font-weight: 300;
+    color: darkblue;
 }
 .article-text {
     font-size: 20px;
-    line-height: -0.3%;
+    line-height: 1.5;
 }
 .col {
-    float: left;
     width: 47%;
 }
 .col img {
@@ -121,6 +119,9 @@ header {
 .col-article-left {
     padding-right: 60px;
 }
+.article .flex {
+    align-items: flex-start;
+}
 
 /* Gallery */
 
@@ -128,8 +129,13 @@ header {
     padding: 80px 0;
     background-color: #c5dddd;
 }
-.col-1-3 {
-    float: left;
+.gallery .flex {
+    flex-wrap: wrap;
+}
+.gallery .article-heading {
+    text-align: center;
+}
+.col-1-3 {;
     width: 30%;
     margin: 1.5%;
 }
