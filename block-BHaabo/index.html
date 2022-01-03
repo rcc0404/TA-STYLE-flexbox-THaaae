@@ -1,0 +1,86 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![/sFlex Shrink Property](https://raw.githubusercontent.comuraj122/AC-STYLE-images/master/flexbox/ex-2.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Blog And Gallery</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/ae803818fe.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <header class="header container">
+    <div class="flex">
+        <a class="brand" href="#"><img src="Maruti-Suzuki-Logo-Transparent-Background.png" alt=""></a>
+        <nav class="nav flex">
+            <a href="#"><img src="assets/icons/bell.svg" alt=""></a>
+            <a href="#">Rahul Chaudhar</a>
+            <a href="#"><img src="assets/icons/user.svg" alt=""></a>
+        </nav>
+</div>
+</header>
+<main class="flex">
+    <article class="article-left">
+        <div class="left">
+            <div>
+                <div class="dashboard flex align-left">
+                    <img src="assets/icons/dashboard.svg" alt="">
+                    <a href="">Dashboard</a>
+                </div>
+                <div class="dashboard flex align-left active">
+                    <img src="assets/icons/article.svg" alt="">
+                    <a href="">Article</a>
+                </div>
+                <div class="dashboard flex align-left">
+                    <img src="assets/icons/analytics.svg" alt="">
+                    <a href="">Analytics</a>
+                </div>
+                <div class="dashboard flex align-left">
+                    <img src="assets/icons/inbox.svg" alt="">
+                    <a href="">Inbox</a>
+                </div>
+                <div class="dashboard flex align-left">
+                    <img src="assets/icons/setting.svg" alt="">
+                    <a href="">Settings</a>
+                </div>
+             </div>
+            
+            <div>
+                <div class="logout flex align-left">
+                    <img src="assets/icons/log-out.svg" alt="">
+                    <a href="">Log Out</a>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    <article class="right">
+        <div class="article-right">
+            <img src="assets/01.png" alt="">
+            <h1>Why we are doing AltCampus? </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta corrupti ullam ipsa, accusantium dolor amet fuga nam eius necessitatibus doloribus quo iure assumenda maiores pariatur ut laborum provident quos nulla!</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam libero inventore magnam, esse quia possimus, quidem nemo at consequuntur quis harum enim porro exercitationem qui, recusandae distinctio cupiditate voluptatum.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam libero inventore magnam, esse quia possimus, quidem nemo at consequuntur quis harum enim porro exercitationem qui, recusandae distinctio cupiditate voluptatum.</p>
+            <a class="more" href="#">Read More</a>
+        </div>
+    </article>
+</main>
+<footer class="footer">
+    <div class="flex container">
+        <a href="#">&copy Maruti Suzuki</a>   
+        <nav class="foot-nav">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
